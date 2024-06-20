@@ -1,10 +1,128 @@
+/* General Styles */
 body {
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     width: 670px;
-    border: 3px solid rgb(255, 0, 179);
+    border: 3px solid #228B22; /* Forest green border */
     padding: 0 2em 1em;
+    background-color: #f0fff0; /* Light green background */
+    font-family: Arial, sans-serif;
 }
+
+/* Header Styles */
 h2 {
-    color: blue;
+    color: #006400; /* Dark green */
+}
+
+/* Button Styles */
+button {
+    background-color: #228B22; /* Forest green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #006400; /* Dark green on hover */
+}
+
+/* Input Styles */
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* List Styles */
+ul[data-role="listview"] {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto; /* Centering the list */
+    width: 80%; /* Adjust the width as needed */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+ul[data-role="listview"] li {
+    background-color: #228B22; /* Forest green */
+    color: white;
+    padding: 20px; /* Increase padding for larger items */
+    margin-bottom: 10px; /* Increase margin for better spacing */
+    border-radius: 4px;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}
+
+ul[data-role="listview"] li:hover {
+    background-color: #006400; /* Dark green on hover */
+}
+
+/* Navbar Styles */
+div[data-role="navbar"] ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #228B22; /* Forest green */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+div[data-role="navbar"] ul li {
+    list-style-type: none;
+}
+
+div[data-role="navbar"] ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+}
+
+div[data-role="navbar"] ul li a:hover {
+    background-color: #006400; /* Dark green on hover */
+}
+
+/* Random Game Title Styles */
+#randomGameTitle {
+    margin: 20px auto; /* Centering the container */
+    width: 80%; /* Adjust the width as needed */
+    padding: 20px; /* Increase padding for larger text */
+    background-color: #228B22; /* Forest green */
+    color: white;
+    border-radius: 4px;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+}
+
+/* Game Details Styles */
+#gameDetailsContent {
+    margin: 20px auto; /* Centering the container */
+    width: 80%; /* Adjust the width as needed */
+    padding: 20px; /* Increase padding for larger text */
+    background-color: #228B22; /* Forest green */
+    color: white;
+    border-radius: 4px;
+    font-size: 18px; /* Larger font size */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+#gameDetailsContent h3 {
+    font-size: 24px; /* Larger font size for the title */
+    margin-bottom: 10px;
+}
+
+#gameDetailsContent p {
+    margin: 10px 0; /* Margin for paragraphs */
+    line-height: 1.5; /* Improve readability */
 }
