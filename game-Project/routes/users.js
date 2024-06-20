@@ -5,7 +5,7 @@ const path = require('path');
 
 const dataFilePath = path.join(__dirname, '../data.json');
 
-// GET all games
+
 router.get('/games', (req, res) => {
     fs.readFile(dataFilePath, (err, data) => {
         if (err) {
@@ -16,7 +16,7 @@ router.get('/games', (req, res) => {
     });
 });
 
-// POST a new game
+
 router.post('/games', (req, res) => {
     fs.readFile(dataFilePath, (err, data) => {
         if (err) {

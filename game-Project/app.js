@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes
+
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 

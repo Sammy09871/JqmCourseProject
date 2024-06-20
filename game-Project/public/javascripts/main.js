@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Add game data
+    
     $('#addGameButton').click(function () {
         const gameData = {
             title: $('#gameTitle').val(),
@@ -22,12 +22,12 @@ $(document).ready(function () {
             success: function (response) {
                 console.log("Game added successfully:", response);
                 alert('Game added successfully!');
-                // Clear form fields
+                
                 $('#gameTitle').val('');
                 $('#releaseYear').val('');
                 $('#gameRating').val('');
                 $('#graphicsRating').val('');
-                $('#multiplayer').val('yes'); // Reset to default value
+                $('#multiplayer').val('yes'); 
                 $('#funRating').val('');
                 $('#recommendation').val('');
                 $('#review').val('');
@@ -39,7 +39,7 @@ $(document).ready(function () {
         });
     });
 
-    // List games
+   
     $('#listGamesButton').click(function () {
         $.ajax({
             url: '/games',
@@ -63,7 +63,7 @@ $(document).ready(function () {
         });
     });
 
-    // Randomize game
+    
     $('#randomizeGameButton').click(function () {
         $.ajax({
             url: '/games/random',
@@ -79,7 +79,7 @@ $(document).ready(function () {
         });
     });
 
-    // Handle click on game list item
+    
     $('#gamesList').on('click', 'li', function () {
         const gameId = $(this).data('game-id');
         $.ajax({

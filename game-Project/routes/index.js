@@ -6,7 +6,7 @@ const path = require('path');
 const dataFilePath = path.join(__dirname, '../data.json');
 const titlesFilePath = path.join(__dirname, '../titles.json');
 
-// Helper functions to read and write data
+
 const readData = (filePath) => {
     try {
         const data = fs.readFileSync(filePath, 'utf8');
@@ -26,7 +26,7 @@ const writeData = (filePath, data) => {
     }
 };
 
-// GET all games
+
 router.get('/games', (req, res) => {
     try {
         const data = readData(dataFilePath);
@@ -36,7 +36,7 @@ router.get('/games', (req, res) => {
     }
 });
 
-// GET game by ID
+
 router.get('/games/:id', (req, res) => {
     try {
         const data = readData(dataFilePath);
@@ -50,7 +50,7 @@ router.get('/games/:id', (req, res) => {
     }
 });
 
-// POST a new game
+
 router.post('/games', (req, res) => {
     try {
         const data = readData(dataFilePath);
@@ -65,7 +65,7 @@ router.post('/games', (req, res) => {
     }
 });
 
-// GET a random game title
+
 router.get('/games/random', (req, res) => {
     try {
         const titles = readData(titlesFilePath);

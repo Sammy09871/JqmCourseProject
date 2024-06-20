@@ -1,22 +1,22 @@
-/* General Styles */
+
 body {
     text-align: center;
     margin: 0 auto;
     width: 670px;
-    border: 3px solid #228B22; /* Forest green border */
+    border: 3px solid #228B22; 
     padding: 0 2em 1em;
-    background-color: #f0fff0; /* Light green background */
+    background-color: #f0fff0; 
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
+
 h2 {
-    color: #006400; /* Dark green */
+    color: #006400; 
 }
 
-/* Button Styles */
+
 button {
-    background-color: #228B22; /* Forest green */
+    background-color: #228B22; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -30,10 +30,10 @@ button {
 }
 
 button:hover {
-    background-color: #006400; /* Dark green on hover */
+    background-color: #006400; 
 }
 
-/* Input Styles */
+
 input[type="text"], input[type="number"], select, textarea {
     width: 100%;
     padding: 12px 20px;
@@ -44,34 +44,34 @@ input[type="text"], input[type="number"], select, textarea {
     box-sizing: border-box;
 }
 
-/* List Styles */
+
 ul[data-role="listview"] {
     list-style-type: none;
     padding: 0;
-    margin: 20px auto; /* Centering the list */
-    width: 80%; /* Adjust the width as needed */
-    text-align: left; /* Align text to the left for better readability */
+    margin: 20px auto; 
+    width: 80%; 
+    text-align: left; 
 }
 
 ul[data-role="listview"] li {
-    background-color: #228B22; /* Forest green */
+    background-color: #228B22; 
     color: white;
-    padding: 20px; /* Increase padding for larger items */
-    margin-bottom: 10px; /* Increase margin for better spacing */
+    padding: 20px; 
+    margin-bottom: 10px; 
     border-radius: 4px;
-    font-size: 18px; /* Larger font size */
-    font-weight: bold; /* Bold text */
+    font-size: 18px; 
+    font-weight: bold; 
 }
 
 ul[data-role="listview"] li:hover {
-    background-color: #006400; /* Dark green on hover */
+    background-color: #006400; 
 }
 
-/* Navbar Styles */
+
 div[data-role="navbar"] ul {
     display: flex;
     justify-content: space-around;
-    background-color: #228B22; /* Forest green */
+    background-color: #228B22; 
     padding: 10px;
     border-radius: 4px;
 }
@@ -89,40 +89,40 @@ div[data-role="navbar"] ul li a {
 }
 
 div[data-role="navbar"] ul li a:hover {
-    background-color: #006400; /* Dark green on hover */
+    background-color: #006400; 
 }
 
-/* Random Game Title Styles */
+
 #randomGameTitle {
-    margin: 20px auto; /* Centering the container */
-    width: 80%; /* Adjust the width as needed */
-    padding: 20px; /* Increase padding for larger text */
-    background-color: #228B22; /* Forest green */
+    margin: 20px auto; 
+    width: 80%; 
+    padding: 20px; 
+    background-color: #228B22; 
     color: white;
     border-radius: 4px;
-    font-size: 18px; /* Larger font size */
-    font-weight: bold; /* Bold text */
-    text-align: center; /* Center text */
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center; 
 }
 
-/* Game Details Styles */
+
 #gameDetailsContent {
-    margin: 20px auto; /* Centering the container */
-    width: 80%; /* Adjust the width as needed */
-    padding: 20px; /* Increase padding for larger text */
-    background-color: #228B22; /* Forest green */
+    margin: 20px auto; 
+    width: 80%; 
+    padding: 20px; 
+    background-color: #228B22; 
     color: white;
     border-radius: 4px;
-    font-size: 18px; /* Larger font size */
-    text-align: left; /* Align text to the left for better readability */
+    font-size: 18px; 
+    text-align: left; 
 }
 
 #gameDetailsContent h3 {
-    font-size: 24px; /* Larger font size for the title */
+    font-size: 24px; 
     margin-bottom: 10px;
 }
 
 #gameDetailsContent p {
-    margin: 10px 0; /* Margin for paragraphs */
-    line-height: 1.5; /* Improve readability */
+    margin: 10px 0;
+    line-height: 1.5; 
 }
